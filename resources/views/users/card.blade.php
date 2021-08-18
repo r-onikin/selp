@@ -16,7 +16,7 @@
             @endif
     </div>
     <div class="card-body text-left">
-        <p class="card-bio">{{ $user->bio }}</p>
+        <p class="card-bio">{!! nl2br(e($user->bio)) !!}</p>
     </div>
 </div>
 {{-- フォロー／アンフォローボタン --}}

@@ -16,7 +16,7 @@
     </div>
     
         <div class="row mt-5">
-            <div class="col-6">
+            <div>
                 {!! Form::model($goal, ['route' => ['goals.update', $goal->id], 'method' => 'put']) !!}
     
                     <div class="form-group">
@@ -28,17 +28,18 @@
                         {!! Form::label('content', 'Content:') !!}
                         {!! Form::textarea('content', null, ['class' => 'form-control','rows' => '2']) !!}
                     </div>
-    
-                    {!! Form::submit('edit', ['class' => 'btn btn-primary mr-3']) !!}
-                    
-                    {{-- Goal削除フォーム --}}
-                    {!! Form::model($goal, ['route' => ['goals.destroy', $goal->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
-                    {!! Form::close() !!}
-    
+                    {!! Form::submit('update', ['class' => 'btn btn-primary mr-3']) !!}
+                    <button onclick="javascript:document.getElementById('deleteForm').submit()" class="btn btn-danger">Delete</button>
+                 
                 {!! Form::close() !!}
+               
+                
+                
+                {{-- Goal削除フォーム --}}
+                {!! Form::model($goal, ['route' => ['goals.destroy', $goal->id], 'method' => 'delete', 'id' => 'deleteForm']) !!}
+                {!! Form::close() !!}
+    
             </div>
-
         </div>
 @endsection
 

@@ -20,7 +20,7 @@
                         @else
                             <td class="font-weight-bold">{{ $goal->title }}</td>
                         @endif
-                            <td  style="width: 70%;">{{ $goal->content }}</td>
+                            <td  style="width: 70%;">{!! nl2br(e($goal->content)) !!}</td>
                     </tr>
                     @endforeach
                 </tbody>
