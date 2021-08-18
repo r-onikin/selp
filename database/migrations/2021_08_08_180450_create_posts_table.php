@@ -16,8 +16,11 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('user_id');
-            $table->string('title');
             $table->string('content');
+            $table->string('lat')->nullable(); // 任意項目
+            $table->string('lng')->nullable(); // 任意項目
+            // 画像のパスを保存するカラムを追加
+            $table->string('image_path')->nullable();
             $table->timestamps();
             
             // 外部キー制約

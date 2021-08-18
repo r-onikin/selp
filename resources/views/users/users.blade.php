@@ -2,8 +2,14 @@
     <ul class="list-unstyled">
         @foreach ($users as $user)
             <li class="media">
-                {{-- ユーザのメールアドレスをもとにGravatarを取得して表示 --}}
-                <img class="mr-2 rounded" src="{{ Gravatar::get($user->email, ['size' => 50]) }}" alt="">
+                
+                @if (empty($user->image_path))
+                    <!--ダミーを表示-->
+                    <img style="width:70px" class="rounded img-fluid" src="{{ asset('avatar_96675.png') }}" alt="">
+                @else
+                    <img style="width:75px" class="rounded img-fluid" src="{{ $user->image_path }}" alt="">
+                @endif
+                
                 <div class="media-body">
                     <div>
                         {{ $user->name }}

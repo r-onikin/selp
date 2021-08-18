@@ -19,7 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('bio');
+            $table->string('bio')->nullable(); // 任意項目
+            // 画像のパスを保存するカラムを追加
+            $table->string('image_path')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
