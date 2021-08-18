@@ -5,13 +5,11 @@
     <div class="d-flex flex-row">
         <div class="justify-content-start">   
             <a href="{{ route('users.show',  ['user' => Auth::id()]) }}">
-                <button type="button" class="btn btn-link">
                     <i class="fas fa-arrow-left" style="color:blue; font-size:20px;"></i>
-                </button>
             </a> 
         </div>
         
-        <div class="justify-content-center">
+        <div class="justify-content-center ml-2">
             <h2>Edit Profile</h2>
         </div>
     </div>

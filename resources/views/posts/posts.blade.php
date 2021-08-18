@@ -1,4 +1,4 @@
-<div class="mt-3"　 style="position: relative;">
+<div class="mt-3" style="position: relative;">
 @if (count($posts) > 0)
     <ul class="list-unstyled">
         @foreach ($posts as $post)
@@ -20,7 +20,7 @@
                     </div>
                     <div>
                         {{-- 投稿内容 --}}
-                        <img style="width:200px" class="rounded img-fluid" src="{{ $post->image_path }}" alt="">
+                        <img style="width:200px;" class="rounded img-fluid" src="{{ $post->image_path }}" alt="">
                         <p class="mb-0">{!! nl2br(e($post->content)) !!}</p>
                     </div>
                     <div style="display:inline-block;">

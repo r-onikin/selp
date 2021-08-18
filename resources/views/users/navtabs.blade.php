@@ -3,7 +3,7 @@
     <li class="nav-item">
         <a href="{{ route('users.show', ['user' => $user->id]) }}" class="nav-link {{ Request::routeIs('users.show') ? 'active' : '' }}">
             TimeLine
-            <span cla2ss="badge badge-secondary">{{ $user->posts_count }}</span>
+            <span class="badge badge-secondary">{{ $user->posts_count }}</span>
         </a>
     </li>
     {{-- お気に入り一覧タブ --}}
