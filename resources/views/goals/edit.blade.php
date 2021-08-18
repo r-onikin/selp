@@ -29,7 +29,7 @@
                         {!! Form::textarea('content', null, ['class' => 'form-control','rows' => '2']) !!}
                     </div>
                     {!! Form::submit('update', ['class' => 'btn btn-primary mr-3']) !!}
-                    <button onclick="javascript:document.getElementById('deleteForm').submit()" class="btn btn-danger">Delete</button>
+                    <button type="button" onclick="javascript:document.getElementById('deleteForm').submit()" class="btn btn-danger">Delete</button>
                  
                 {!! Form::close() !!}
                
