@@ -12,8 +12,7 @@
                 @include('goals.index')
                 {{-- 投稿フォーム --}}
                 @include('posts.form')
-                {{-- タブ --}}
-                @include('users.navtabs')
+
                 {{-- 投稿一覧 --}}
                 @include('posts.posts')
             </div>
