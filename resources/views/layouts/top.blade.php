@@ -16,6 +16,7 @@
                 position: relative;
             }
             .top_content::before {
+                pointer-events: none;
                 content: '';
                 top: 0;
                 right: 0;
