@@ -19,7 +19,6 @@ class PostsController extends Controller
             $posts = $user->feed_posts()->orderBy('created_at', 'desc')->paginate(10);
             
             $goals = $user->goals()->orderBy('created_at', 'desc')->get();
-
             $data = [
                 'user' => $user,
                 'posts' => $posts,
@@ -81,6 +80,7 @@ class PostsController extends Controller
     
     public function show($id)
     {
+        // ヌルなら表示しない
         // idの値で投稿を検索して取得
         $post = \App\Post::findOrFail($id);
 
