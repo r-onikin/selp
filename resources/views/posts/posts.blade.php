@@ -23,12 +23,14 @@
                         <img style="width:200px;" class="rounded img-fluid" src="{{ $post->image_path }}" alt="">
                         <p class="mb-0">{!! nl2br(e($post->content)) !!}</p>
                     </div>
-                    <div style="display:inline-block;">
                     <!--位置情報詳細ページへのリンク-->
-                    <a href="{{ route('posts.show', ['post' => $post->id]) }}">
-                        <i class="fas fa-map-marked-alt"></i>
-                    </a> 
-                    </div>
+                    @if(!empty($post->lat))
+                        <div style="display:inline-block;">
+                        <a href="{{ route('posts.show', ['post' => $post->id]) }}">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </a> 
+                        </div>
+                    @endif
                     <div style="display:inline-block;">
                     {{-- お気に入り／アンファボリットーボタン --}}
                     @include('posts.favorite_button')

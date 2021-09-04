@@ -10,7 +10,7 @@
         </div>
         
         <div class="justify-content-center ml-2">
-            <h2>Edit Profile</h2>
+            <h4>Edit Profile</h4>
         </div>
     </div>
     

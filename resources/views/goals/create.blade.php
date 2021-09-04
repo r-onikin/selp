@@ -12,7 +12,7 @@
         </div>
         
         <div class="justify-content-center">
-            <h2>Goal作成ページ</h2>
+            <h4>Goal作成ページ</h4>
         </div>
     </div>
 

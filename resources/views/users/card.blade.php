@@ -10,9 +10,9 @@
     <div class="card-body text-center">
             @if (empty($user->image_path))
                {{-- ユーザのメールアドレスをもとにGravatarを取得して表示 --}}
-                <img class="rounded img-fluid" src="{{ Gravatar::get($user->email, ['size' => 300]) }}" alt="">
+                <img class="rounded img-fluid" src="{{ Gravatar::get($user->email, ['size' => 200]) }}" alt="">
             @else
-                <img style="width:380px" class="rounded img-fluid" src="{{ $user->image_path }}" alt="">
+                <img style="width:300px" class="rounded img-fluid" src="{{ $user->image_path }}" alt="">
             @endif
     </div>
     <div class="card-body text-left">

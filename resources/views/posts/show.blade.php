@@ -10,11 +10,11 @@
 
         
     <div class="justify-content-center mb-3">
-        <h2>投稿位置情報</h2>
+        <h4>投稿位置情報</h4>
     </div>
 </div>
 
-<div id="map" style="width: 480px; height: 450px; border: solid 2px #6091d3; border-radius: 5px; class="mt-4"></div>
+<div id="map" style="width: auto; height: 450px; border: solid 2px #6091d3; border-radius: 5px; class="mt-4"></div>
 
 <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqsqITQBn8W4RsSv3irNZ04saBDOjN87A&callback=initMap"></script>
 <script>

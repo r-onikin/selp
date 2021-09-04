@@ -8,8 +8,8 @@
         <input type="file" name="image">
         
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-          位置情報を追加
+        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#exampleModalCenter">
+          追加<i class="fas fa-map-marker-alt"></i>
         </button>
         
         <!-- Modal -->
@@ -26,7 +26,7 @@
                <!-- ...-->
                <!--  ここは実際のビューの表示部分 -->
                <!--地図の表示部分 -->
-              <div id="map" style="width:470px;height:250px;"></div>
+              <div id="map" style="width:auto;height:250px;"></div>
               
               <!--ここをビューの最後の方に入れる（YOUR_API_KEYをご自身のAPIキーと置き換える） -->
               <script async
