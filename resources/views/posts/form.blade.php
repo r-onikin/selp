@@ -1,3 +1,8 @@
+<!--ここをビューの最後の方に入れる（YOUR_API_KEYをご自身のAPIキーと置き換える） -->
+<script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqsqITQBn8W4RsSv3irNZ04saBDOjN87A&callback=initMap">
+</script>
+
 {!! Form::open(['route' => 'posts.store', 'files' => true]) !!}
     <input type="hidden" name="lat">
     <input type="hidden" name="lng">
@@ -28,10 +33,7 @@
                <!--地図の表示部分 -->
               <div id="map" style="width:auto;height:250px;"></div>
               
-              <!--ここをビューの最後の方に入れる（YOUR_API_KEYをご自身のAPIキーと置き換える） -->
-              <script async
-                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqsqITQBn8W4RsSv3irNZ04saBDOjN87A&callback=initMap">
-              </script>
+
               <script>
                   let map;
                   function initMap() {
@@ -69,7 +71,7 @@
                       });
                   };
                 function closeLocation(){
-                console.log('a');
+                <!--console.log('a');-->
                     document.querySelector('[name="lat"]').value = null;
                     document.querySelector('[name="lng"]').value = null;
                 }

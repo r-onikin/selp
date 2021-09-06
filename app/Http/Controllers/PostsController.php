@@ -80,7 +80,6 @@ class PostsController extends Controller
     
     public function show($id)
     {
-        // ヌルなら表示しない
         // idの値で投稿を検索して取得
         $post = \App\Post::findOrFail($id);
 
