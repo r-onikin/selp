@@ -1,7 +1,3 @@
-<!--ここをビューの最後の方に入れる（YOUR_API_KEYをご自身のAPIキーと置き換える） -->
-<script async
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqsqITQBn8W4RsSv3irNZ04saBDOjN87A&callback=initMap">
-</script>
 
 {!! Form::open(['route' => 'posts.store', 'files' => true]) !!}
     <input type="hidden" name="lat">
@@ -76,6 +72,12 @@
                     document.querySelector('[name="lng"]').value = null;
                 }
               </script>
+              
+              <!--ここをビューの最後の方に入れる（YOUR_API_KEYをご自身のAPIキーと置き換える） -->
+              <script async
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqsqITQBn8W4RsSv3irNZ04saBDOjN87A&callback=initMap">
+              </script>
+
               
               </div>
               <div class="modal-footer">
