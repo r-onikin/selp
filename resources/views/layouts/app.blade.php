@@ -9,9 +9,6 @@
     </head> 
 
     <body>
-    <script async
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqsqITQBn8W4RsSv3irNZ04saBDOjN87A&callback=initMap">
-    </script>
 
         {{-- ナビゲーションバー --}}
         @include('commons.navbar')
