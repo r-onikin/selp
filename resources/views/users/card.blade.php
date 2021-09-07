@@ -1,7 +1,9 @@
 
 @if (Auth::id() == $user->id)
     <!--プロフィール編集ページ-->
-    {!! link_to_route('users.bioEdit', 'Edit Profile', [], ['class' => 'btn btn-outline-primary']) !!}
+    <div class="mb-1" style="text-align: right">
+        {!! link_to_route('users.bioEdit', 'Edit Profile', [], ['class' => 'btn btn-outline-primary']) !!}
+    </div>
 @endif
 <div class="card">
     <div class="card-header">

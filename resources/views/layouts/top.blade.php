@@ -14,6 +14,7 @@
                 min-height: 800px;
                 color: white;
                 position: relative;
+                
             }
             .top_content::before {
                 pointer-events: none;
@@ -33,13 +34,12 @@
         {{-- ナビゲーションバー --}}
         @include('commons.top_navbar')
 
-        <!--<div class="container">-->
+        <div class="container">
             {{-- エラーメッセージ --}}
             @include('commons.error_messages')
         
             @yield('content')
-            <!--<div class="top_content">-->
-            <!--</div>-->
+        </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
