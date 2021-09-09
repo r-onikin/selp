@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
 
+
+<div class="container">
     <!--作成をやめてトップページへ戻る-->
     <div class="d-flex flex-row">
         <div class="justify-content-start">   
@@ -36,4 +38,5 @@
             {!! Form::close() !!}
         </div>
     </div>
+</div>
 @endsection

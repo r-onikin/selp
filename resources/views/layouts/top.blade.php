@@ -6,14 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
         <style>
+            .back {
+                background-color: black;
+            
+            }
             .top_content {
                 background-image: url({{ asset('background.jpg') }});
                 background-size: cover;
                 background-position: center top;
                 background-repeat: no-repeat;
-                min-height: 800px;
+                min-height: 1000px;
                 color: white;
                 position: relative;
+                background-attachment: fixed;
                 
             }
             .top_content::before {
@@ -34,7 +39,7 @@
         {{-- ナビゲーションバー --}}
         @include('commons.top_navbar')
 
-        <div class="container">
+        <!--<div class="container">-->
             {{-- エラーメッセージ --}}
             @include('commons.error_messages')
         
