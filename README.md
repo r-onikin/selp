@@ -1,78 +1,89 @@
 # SELP
+自己研鑽「Self Develpment」の共有に特化したSNSアプリです。
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+※現在、ドメイン取得中でであり、近日中にAWSのEC2にて公開予定です。<br>
+URL：
+<br>
 
-## About Laravel
+## テストユーザー
+メールアドレス　test@gmail.com<br>
+パスワード　aaaa1111
+<br>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 制作した背景
+終身雇用制度が崩壊しつつあり、人生100年時代において、自己研鑽の重要度が高くなってきていますが、<br>
+モチベーションを維持し継続することは簡単ではありません。<br>
+そこで、私だけでなく友人含め、自己研鑽をモチベーション高く継続させたい！と思ったことがきっかけです。<br>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+そして、いざその友人たちと自己研鑽に挑戦しましたが、<br>
+- モチベーションが維持できない
+- ついサボってしまう
+このような要因により、2ヶ月目から続きませんでした。。。<br>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+そこで対策として<br>
+- 意識高い系Vlogを視聴する
+- 起きる時間を友人に宣言する
+- １日の取り組みをグループ内で共有する
+このように対策を施行することにより、自己研鑽が2ヶ月目以降も継続できました。<br>
 
-## Learning Laravel
+こうした経験から、自己研鑽の継続をサポートできるアプリを作成したいと考えました。<br>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 使用技術
+1. フロントエンド
+ - HTML/CSS/Bootstrap
+ - jQuery
+ - JavaScript
+ - GoogleAPI(Map projects)
+2. バックエンド
+ - php 7.3.29
+ - Laravel 6.20.31
+3. インフラ
+ - mysql 5.7.35
+ - AWS (EC2,S3,Route53,VPC,EIP,Cloud9)
+4. その他のツール
+ - Cacoo
+ - Adobe XD
+<br>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## AWS構成図
 
-## Laravel Sponsors
+## 機能一覧
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## DB設計
+### ER図
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+### 各テーブルについて
+ <table>
+    <tr>
+      <th>テーブル名</th>
+      <th>説明</th>
+    </tr>
+    <tr>
+      <td>users</td>
+      <td>ユーザー情報</td>
+    </tr>
+    <tr>
+      <td>user_follow</td>
+      <td>ユーザーフォローの中間テーブル</td>
+    </tr>
+     <tr>
+      <td>posts</td>
+      <td>投稿情報</td>
+    </tr>
+     <tr>
+      <td>favorites</td>
+      <td>投稿への、いいね情報</td>
+    </tr>
+    <tr>
+      <td>goals</td>
+      <td>ユーザー目標情報</td>
+    </tr>
+  </table>
 
-## Contributing
+## 今後のアップデート予定と課題
+今後は、以下の内容について修正及び加工を施し、ユーザーファーストのアプリにしていきたいと考えています。<br>
+- フォロワー間のチャット機能（現在、pusherとajaxを使用した非同期通信の実装中）
+- API連携によるログイン機能の拡張
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
