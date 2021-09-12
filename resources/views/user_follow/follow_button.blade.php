@@ -3,7 +3,7 @@
         <div class="mb-1" style="text-align: right;">
             {{-- アンフォローボタンのフォーム --}}
             {!! Form::open(['route' => ['user.unfollow', $user->id], 'method' => 'delete']) !!}
-                {!! Form::submit('Unfollow', ['class' => "btn btn-danger btn-block"]) !!}
+                {!! Form::submit('Unfollow', ['class' => "btn btn-danger"]) !!}
             {!! Form::close() !!}
         </div>
     @else
