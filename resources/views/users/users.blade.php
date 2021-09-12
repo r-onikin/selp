@@ -6,9 +6,9 @@
                 
                 @if (empty($user->image_path))
                     <!--ダミーを表示-->
-                    <img style="width:70px" class="rounded img-fluid" src="{{ asset('avatar_96675.png') }}" alt="">
+                    <img class="rounded img-fluid mb-2" src="{{ Gravatar::get($user->email, ['size' => 75]) }}" alt="">
                 @else
-                    <img style="width:75px" class="rounded img-fluid" src="{{ $user->image_path }}" alt="">
+                    <img style="width:75px" class="rounded img-fluid mb-2" src="{{ $user->image_path }}" alt="">
                 @endif
                 
                 <div class="media-body">

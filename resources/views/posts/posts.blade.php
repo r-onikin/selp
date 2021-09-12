@@ -10,7 +10,7 @@
                  {{-- ユーザのメールアドレスをもとにGravatarを取得して表示 --}}
                 <img class="rounded img-fluid" src="{{ Gravatar::get($user->email, ['size' => 100]) }}" alt="">
             @else
-                <img style="width:100px" class="rounded img-fluid" src="{{ $user->image_path }}" alt="">
+                <img style="width:100px" class="rounded img-fluid" src="{{ $post->user->image_path }}" alt="">
             @endif
                 <div class="media-body ml-2">
                     <div>
