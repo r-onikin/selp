@@ -30,7 +30,7 @@
 
         </style>
     </head> 
-    <body>
+    <body
 
         {{-- ナビゲーションバー --}}
         @include('commons.top_navbar')
