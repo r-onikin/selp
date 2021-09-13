@@ -1,7 +1,7 @@
 # SELP
 自己研鑽「Self Develpment」の共有に特化したSNSアプリです。
 
-  <a href="https://gyazo.com/b23a193be12021406eb4205e87dac9cc">  <img src="https://i.gyazo.com/b23a193be12021406eb4205e87dac9cc.jpg" alt="Image from Gyazo" width="890"/></a>
+  <a href="https://gyazo.com/b23a193be12021406eb4205e87dac9cc">  <img src="https://i.gyazo.com/b23a193be12021406eb4205e87dac9cc.jpg" alt="Image from Gyazo" width="700"/></a>
 
 ※現在、ドメイン取得中であり、近日中にAWSのEC2にて公開予定です。<br>
 URL：
@@ -72,12 +72,38 @@ URL：
 
 # イメージ一覧
 
+## メインページ
+
+<a href="https://gyazo.com/d5b6167608b72c54c285f7f2d7db6f90"><img src="https://i.gyazo.com/d5b6167608b72c54c285f7f2d7db6f90.png" alt="Image from Gyazo" width="500"/></a><br>
+
+メインページには、自分の目標とフォロワ中ユーザー及び自分の投稿を一覧で表示しています。<br>
+また、投稿も行えます。
+
+## マイページ
+
+<a href="https://gyazo.com/49d07e09181d3f711c8512a03ce7e44d"><img src="https://i.gyazo.com/49d07e09181d3f711c8512a03ce7e44d.png" alt="Image from Gyazo" width="500"/></a><br>
+
+マイページには、自分のプロフィールと目標、自分の投稿が表示されます。<br>
+また、お気に入りの投稿とフォロー/フォロワー一覧の検索も可能です。<br>
+
+## プロフィール編集
+
+<a href="https://gyazo.com/184da8f0f070eff6556bd125131445b1"><img src="https://i.gyazo.com/184da8f0f070eff6556bd125131445b1.png" alt="Image from Gyazo" width="400"/></a><br>
+
+自分のプロフィールである「アイコン」と「自己紹介文」を編集できるようになっています。<br>
+
+## 位置情報追加
+
+<a href="https://gyazo.com/8814e9d040c1105f84f68a4e5ac26458"><img src="https://i.gyazo.com/8814e9d040c1105f84f68a4e5ac26458.png" alt="Image from Gyazo" width="500"/></a><br>
+
+投稿において、位置情報ボタンをクリックするとモーダルが機能し、Google Mapの活用による位置情報の投稿が可能です。<br>
+位置情報を追加した投稿は、位置情報ボタンをクリックすると確認することができます。
 
 
 # DB設計
 ## ER図
 
-<a href="https://gyazo.com/0208772158d4760d292abbe00286c2cc"><img src="https://i.gyazo.com/0208772158d4760d292abbe00286c2cc.png" alt="Image from Gyazo" width="790"/></a>
+<a href="https://gyazo.com/0208772158d4760d292abbe00286c2cc"><img src="https://i.gyazo.com/0208772158d4760d292abbe00286c2cc.png" alt="Image from Gyazo" width="650"/></a>
 
 
 ## 各テーブルについて
