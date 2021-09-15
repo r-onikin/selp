@@ -4,12 +4,12 @@
   <a href="https://gyazo.com/b23a193be12021406eb4205e87dac9cc">  <img src="https://i.gyazo.com/b23a193be12021406eb4205e87dac9cc.jpg" alt="Image from Gyazo" width="700"/></a>
 
 ※現在、ドメイン取得中であり、近日中にAWSのEC2にて公開予定です。<br>
-URL：
+URL：https://selp20210818.herokuapp.com/
 <br>
 
 ## テストユーザー
-メールアドレス　test@gmail.com<br>
-パスワード　aaaa1111  
+メールアドレス　111@gmail.com<br>
+パスワード　12341234  
 
 
 # 制作した背景
