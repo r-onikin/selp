@@ -104,7 +104,7 @@ class GoalsController extends Controller
         }
 
          // 前のURLへリダイレクトさせる
-        return back();;
+        return back();
     }
 
     /**
