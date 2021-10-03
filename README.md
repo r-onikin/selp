@@ -1,78 +1,143 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# SELP
+自己研鑽「Self Develpment」の共有に特化したSNSアプリです。
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+  <a href="https://gyazo.com/b23a193be12021406eb4205e87dac9cc">  <img src="https://i.gyazo.com/b23a193be12021406eb4205e87dac9cc.jpg" alt="Image from Gyazo" width="700"/></a>
 
-## About Laravel
+※現在、ドメイン取得中であり、近日中にAWSのEC2にて公開予定です。<br>
+URL：https://selp20210818.herokuapp.com/
+<br>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## テストユーザー
+メールアドレス　111@gmail.com<br>
+パスワード　12341234  
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# 制作した背景
+終身雇用制度が崩壊しつつあり、人生100年時代において、自己研鑽の重要度が高くなってきていますが、<br>
+モチベーションを維持し継続することは簡単ではありません。<br>
+そこで、私だけでなく友人含め、自己研鑽をモチベーション高く継続させたい！と思ったことがきっかけです。<br>
 
-## Learning Laravel
+そして、いざその友人たちと自己研鑽に挑戦しましたが、<br>
+- モチベーションが維持できない
+- ついサボってしまう
+このような要因により、2ヶ月目から続きませんでした。。。<br>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+そこで対策として<br>
+- 意識高い系Vlogを視聴する
+- 起きる時間を友人に宣言する
+- １日の取り組みをグループ内で共有する
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+このように対策を施行することにより、自己研鑽が2ヶ月目以降も継続できました。<br>
 
-## Laravel Sponsors
+こうした経験から、自己研鑽の継続をサポートするアプリを作成したいと考えました。
+<br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+# 使用技術
+- フロントエンド
+   - HTML/CSS/Bootstrap
+   -  jQuery
+   - JavaScript
+   - GoogleAPI(Map projects)
+- バックエンド
+   - php 7.3.29
+   - Laravel 6.20.31
+- インフラ
+   - mysql 5.7.35
+   - AWS (EC2,S3,Route53,VPC,EIP,Cloud9)
+- その他のツール
+   - Cacoo
+   - Adobe XD
+<br>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
 
-## Contributing
+# 機能一覧
+- ユーザー登録関連
+   - アカウント新規登録
+   - ログイン、ログアウト機能
+   - パスワードロック機能
+   - ユーザー情報編集機能
+  
+- ユーザー投稿関連(CRUD)
+   - 位置情報登録(GoogleMap API)- 
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- いいね機能
+    - いいねした投稿一覧機能(ページネーション）
 
-## Code of Conduct
+- フォロー機能
+   - フォロー/フォロワー一覧(ページネーション)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- 目標設定関連(CRUD)
 
-## Security Vulnerabilities
+- 画像アップロード機能(AWS S3バケット)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# イメージ一覧
 
-## License
+## メインページ
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<a href="https://gyazo.com/d5b6167608b72c54c285f7f2d7db6f90"><img src="https://i.gyazo.com/d5b6167608b72c54c285f7f2d7db6f90.png" alt="Image from Gyazo" width="500"/></a><br>
+
+メインページには、自分の目標とフォロワ中ユーザー及び自分の投稿を一覧で表示しています。<br>
+また、投稿も行えます。
+
+## マイページ
+
+<a href="https://gyazo.com/49d07e09181d3f711c8512a03ce7e44d"><img src="https://i.gyazo.com/49d07e09181d3f711c8512a03ce7e44d.png" alt="Image from Gyazo" width="500"/></a><br>
+
+マイページには、自分のプロフィールと目標、自分の投稿が表示されます。<br>
+また、お気に入りの投稿とフォロー/フォロワー一覧の検索も可能です。<br>
+
+## プロフィール編集
+
+<a href="https://gyazo.com/184da8f0f070eff6556bd125131445b1"><img src="https://i.gyazo.com/184da8f0f070eff6556bd125131445b1.png" alt="Image from Gyazo" width="400"/></a><br>
+
+自分のプロフィールである「アイコン」と「自己紹介文」を編集できるようになっています。<br>
+
+## 位置情報追加
+
+<a href="https://gyazo.com/8814e9d040c1105f84f68a4e5ac26458"><img src="https://i.gyazo.com/8814e9d040c1105f84f68a4e5ac26458.png" alt="Image from Gyazo" width="500"/></a><br>
+
+投稿において、位置情報ボタンをクリックするとモーダルが機能し、Google Mapの活用による位置情報の投稿が可能です。<br>
+位置情報を追加した投稿は、位置情報ボタンをクリックすると確認することができます。
+
+
+# DB設計
+## ER図
+
+<a href="https://gyazo.com/0208772158d4760d292abbe00286c2cc"><img src="https://i.gyazo.com/0208772158d4760d292abbe00286c2cc.png" alt="Image from Gyazo" width="650"/></a>
+
+
+## 各テーブルについて
+ <table>
+    <tr>
+      <th>テーブル名</th>
+      <th>説明</th>
+    </tr>
+    <tr>
+      <td>users</td>
+      <td>ユーザー情報</td>
+    </tr>
+    <tr>
+      <td>user_follow</td>
+      <td>ユーザーフォローの中間テーブル</td>
+    </tr>
+     <tr>
+      <td>posts</td>
+      <td>投稿情報</td>
+    </tr>
+     <tr>
+      <td>favorites</td>
+      <td>投稿への、いいね情報</td>
+    </tr>
+    <tr>
+      <td>goals</td>
+      <td>ユーザー目標情報</td>
+    </tr>
+  </table>
+
+# 今後のアップデート予定と課題
+今後は、以下の内容について修正及び加工を施し、ユーザーファーストのアプリにしていきたいと考えています。<br>
+- フォロワー間のチャット機能（現在、pusherとajaxを使用した非同期通信の実装中）
+- API連携によるログイン機能の拡張
+
+
+
